@@ -1,0 +1,64 @@
+.image {
+  width: 120vw;
+  position: absolute;
+  transition-duration: 2s;
+  transform: translateX(0px);
+}
+.move {
+  transform: translateX(20px);
+  transition-duration: 10s;
+}
+.zoom {
+  transform: scale(1.1);
+  transition-duration: 10s;
+}
+.move-inverted {
+  transform: translateX(-20px);
+  transition-duration: 10s;
+}
+.move-vertical {
+  transform: translateY(30px);
+  transition-duration: 10s;
+}
+.move-vertical-inverted {
+  transform: translateY(-30px);
+  transition-duration: 10s;
+}
+.bg {
+  width: 120vw;
+  height: 120vh;
+  object-fit: cover;
+  position: absolute;
+  filter: blur(10px);
+  z-index: -1;
+}
+.image-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  transition-duration: 3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+/* Fading animation */
+.fade {
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+.show {
+  opacity: 1;
+}
+
+#carousel {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+}
